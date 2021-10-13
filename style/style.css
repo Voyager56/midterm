@@ -127,7 +127,7 @@ form input{
     border: none;
     border-radius: 10px;
 }
-@media only screen and (max-width:1100px) {
+@media only screen and (max-width:1200px) {
     .navbar {
       bottom: 0;
       width: 100%;
@@ -153,7 +153,7 @@ form input{
         display: none;
     }
 }
-@media only screen and (min-width:1100px) {
+@media only screen and (min-width:1200px) {
     .navbar {
       width: 5rem;
       height: 1080px;
