@@ -106,6 +106,7 @@ form input{
 }
 .header-nav{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .header-navitem{
