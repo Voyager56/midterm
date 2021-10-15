@@ -22,7 +22,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    height: 100vh;
 }
 .logo{
     display: flex;
@@ -127,17 +127,48 @@ form input{
     border: none;
     border-radius: 10px;
 }
+.section-navbar{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+.nav-link:active{
+    background-color: #F8F8F8;
+}
+.last-item{
+    margin: 0 100px 0 auto;
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 12px;
+}
+.filter-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+.filter{
+    margin-left: 10px;
+}
 @media only screen and (max-width:1200px) {
     .navbar {
       bottom: 0;
       width: 100%;
-      height: 5rem;
     }
     .logo-link img{
         display: none;
     }
     .nav {
       flex-direction: row;
+      height: 5rem;
     }
     .link:hover{
         background-color: var(--hover-color);
@@ -161,7 +192,7 @@ form input{
     .navbar:hover .link{
         margin: 0 auto;
         justify-content:flex-start;
-        margin-bottom: 1rem;
+        margin-bottom: 1rem;    
         border-radius: 12px;
         width: 15rem;
         padding: 10px 20px 10px 20px;
@@ -193,5 +224,20 @@ form input{
     }
     main{
         margin-left: 20rem;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .gopro-link{
+        display: none;
+    }
+    .bell{
+        display: none;
+    }
+    .mail{
+        display: none;
+    }
+    .header-nav{
+        flex-direction: column;
     }
 }
