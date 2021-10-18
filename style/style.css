@@ -2,10 +2,8 @@
     --hover-color: #FF2288;
     --nav-bar-bg: #222222;
     font-size: 16px;
-    font-family: 'Avenir';
 }
 main{
-    margin-left: 5rem;
     padding: 1rem;
 }
 /* navbar */
@@ -120,6 +118,11 @@ form input{
     list-style: none;
     margin-right: 20px;
 }
+.pfp-svg{
+    padding: 5px;
+    border: 2px solid gray;
+    border-radius: 50%;
+}
 .gopro-link{
     font-family: 'Avenir Heavy';
     text-decoration: none;
@@ -175,6 +178,7 @@ form input{
     grid-template-columns: repeat(auto-fit, 186px);
     grid-column-gap: 40px;
     margin-right: 100px;
+    justify-content: center;
 }
 .component-relative{
     position: relative;
@@ -203,7 +207,7 @@ form input{
     top: 30px;
 }
 .plus-btn{
-    top: 65px;
+    top: 70px;
 }
 .heart-btn:hover{
     background-color:rgb(228, 60, 94)
@@ -277,6 +281,32 @@ form input{
     border-radius: 10px;
     cursor: pointer;
 }
+.table-wrap{
+    overflow-x: auto;
+}
+.container{
+    width: 100%;
+    color: #afafaf;
+    margin: 50px auto;
+}
+td, th {
+    font-family: 'Avenir Heavy';
+    border-top: 1px solid #dddddd;
+    text-align: left;
+    padding: 20px;
+}
+th{
+    font-size: 18px;
+    color: #111111;
+}
+tbody :nth-child(8){
+    color: var(--hover-color);
+}
+tr:hover{
+    color: #222222;
+    background: #F2F2F2;
+    border-radius: 12px;
+}
 /* footer */
 .footer-wrap{
     margin-top: 50px;
@@ -303,7 +333,7 @@ form input{
     grid-area: directories;
 }
 .footer-wrap h3{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     font-family: 'Avenir Heavy';
 }
 .footer-wrap li{
@@ -316,6 +346,35 @@ form input{
     text-decoration: none;
     color: black;
     font-family: 'Avenir Book';
+}
+
+.footer-wrap div ul:last-child{
+    margin-bottom: 40px;
+}
+.footer-logos{
+    margin-top:50px;
+    display: flex;
+    width: 100%;
+}
+.smart-academy{
+    text-decoration: none;
+    color: black;
+    margin-left: auto;
+}
+#for{
+    font-family: 'Avenir Book';
+}
+#smartac{
+    font-family: 'Avenir Black';
+}
+#facebook svg path:hover{
+    fill: #0e0792;
+}
+#instagram svg path:hover{
+    fill: #c50eb0;
+}
+#twitter svg path:hover{
+    fill: #076692;
 }
 @media only screen and (max-width:1200px) {
     .navbar {
@@ -390,7 +449,17 @@ form input{
     }
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:700px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .searchbox{
+        margin-bottom: 50px;
+    }
+    .section-navbar{
+        display: none;
+    }
     .gopro-link{
         display: none;
     }
@@ -402,5 +471,16 @@ form input{
     }
     .header-nav{
         flex-direction: column;
+    }
+    .footer-wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .company{
+        margin-top: 40px;
+    }
+    .brands{
+        margin: 0;
     }
 }
