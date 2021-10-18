@@ -313,26 +313,23 @@ tr:hover{
 .footer-wrap{
     margin-top: 50px;
     display: grid;
-    grid-template: 
-    'for-designers hire-designers company directories'
-    'for-designers brands company design-assets';
-
+    grid-gap: 40px;
+    grid-template-rows: auto;
 }
 .for-designers-wrap{
-    grid-area: for-designers;
+    grid-row: span 2;
 }
-.hire-designers{
-    grid-area: hire-designers
-}
+
 .brands{
-    margin-top: -50px;
-    grid-area: brands;
+    grid-row: 2/3;
+    grid-column: 2/3;
 }
 .company{
-    grid-area: company;
+    grid-row: span 2;
 }
-.directories{
-    grid-area: directories;
+.design-assets{
+    grid-row: 2/3;
+    grid-column: 4/5;
 }
 .footer-wrap h3{
     margin-bottom: 10px;
@@ -350,9 +347,6 @@ tr:hover{
     font-family: 'Avenir Book';
 }
 
-.footer-wrap div ul:last-child{
-    margin-bottom: 40px;
-}
 .footer-logos{
     margin-top:50px;
     display: flex;

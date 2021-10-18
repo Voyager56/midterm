@@ -23,6 +23,7 @@
     .followers{
         display: none;
     }
+
 }
 @media only screen and (min-width:1200px) {
     .navbar {
@@ -73,7 +74,7 @@
 
 @media only screen and (max-width:700px){
     header{
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
     .searchbox{
@@ -99,10 +100,5 @@
         flex-direction: column;
         align-items: center;
     }
-    .company{
-        margin-top: 40px;
-    }
-    .brands{
-        margin: 0;
-    }
+
 }
