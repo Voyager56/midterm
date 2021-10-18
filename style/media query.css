@@ -1,0 +1,108 @@
+@media only screen and (max-width:1200px) {
+    .navbar {
+      bottom: 0;
+      width: 100%;
+    }
+    .logo-link img{
+        display: none;
+    }
+    .nav {
+      flex-direction: row;
+      height: 5rem;
+    }
+    .link:hover{
+        background-color: var(--hover-color);
+    }
+    .link {
+      justify-content: center;
+    }
+  
+    main {
+      margin-bottom: 5rem;
+    }
+    .followers{
+        display: none;
+    }
+}
+@media only screen and (min-width:1200px) {
+    .navbar {
+      width: 5rem;
+      height: 100vh;
+    }
+    .navbar:hover .link{
+        margin: 0 auto;
+        justify-content:flex-start;
+        margin-bottom: 1rem;    
+        border-radius: 12px;
+        width: 15rem;
+        padding: 10px 20px 10px 20px;
+    }
+    .navbar:hover .follower-link,#following-text,.show-more{
+        justify-content: flex-start;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        width: 15rem;
+    }
+    .navbar:hover .show-more{
+        display: initial;
+    }
+
+    .navbar:hover .link:hover{
+        background-color: var(--hover-color);
+    }
+
+    .navbar:hover .logo{
+        justify-content: space-between; 
+    }
+    .navbar:hover #logo{
+        display: initial;
+    }
+    .navbar:hover {
+        width: 20rem;
+    }
+    .navbar:hover .text {
+        display: inline;
+    }
+    .follower-link span:hover{
+       color: gray;
+    }
+    main{
+        margin-left: 20rem;
+    }
+}
+
+@media only screen and (max-width:700px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .searchbox{
+        margin-bottom: 50px;
+    }
+    .section-navbar{
+        display: none;
+    }
+    .gopro-link{
+        display: none;
+    }
+    .bell{
+        display: none;
+    }
+    .mail{
+        display: none;
+    }
+    .header-nav{
+        flex-direction: column;
+    }
+    .footer-wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .company{
+        margin-top: 40px;
+    }
+    .brands{
+        margin: 0;
+    }
+}

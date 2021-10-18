@@ -76,13 +76,13 @@ main{
     padding: 10px 20px 10px 20px;
     text-align: center;
     text-decoration: none;
-    color: white;
+    color: #F8F8F8;
     transition: 200ms ease;
 }
 .show-more{
     text-decoration: none;
     display: none;
-    color: white;
+    color: #F8F8F8;
 }
 
 /* header */
@@ -187,6 +187,7 @@ form input{
     width: 250px;
 }
 .heart-btn,.plus-btn{
+    border: none;
     display: none;
     position: absolute;
     left: 30px;
@@ -220,7 +221,7 @@ form input{
     text-decoration: none;
     color: black;
     text-align: center;
-    background-color: rgb(199, 192, 192);
+    background-color: #D8D8D8;
     border-radius: 10px;
     margin: 100px auto 0px auto;
     padding: 10px 50px;
@@ -238,7 +239,8 @@ form input{
     display: flex;
     justify-content: space-between;
 }
-.wrap span{
+.wrap a{
+    text-decoration: none;
     color: rgb(199, 192, 192);
 }
 .designers{
@@ -250,7 +252,7 @@ form input{
 }
 .designers a{
     text-decoration: none;
-    color: black;
+    color: #222222;
 }
 .designers a h3{
     font-size: 14px;
@@ -276,7 +278,7 @@ form input{
 .designer button{
     width: 100px;
     border: none;
-    background-color: rgb(199, 192, 192);
+    background-color: #D8D8D8;
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
@@ -305,7 +307,7 @@ tbody :nth-child(8){
 tr:hover{
     color: #222222;
     background: #F2F2F2;
-    border-radius: 12px;
+    border-radius: 10px;
 }
 /* footer */
 .footer-wrap{
@@ -344,7 +346,7 @@ tr:hover{
 }
 .footer-wrap a{
     text-decoration: none;
-    color: black;
+    color: #222222;
     font-family: 'Avenir Book';
 }
 
@@ -358,13 +360,14 @@ tr:hover{
 }
 .smart-academy{
     text-decoration: none;
-    color: black;
+    color: #222222;
     margin-left: auto;
 }
 #for{
     font-family: 'Avenir Book';
 }
 #smartac{
+    font-size: 18px;
     font-family: 'Avenir Black';
 }
 #facebook svg path:hover{
@@ -375,112 +378,4 @@ tr:hover{
 }
 #twitter svg path:hover{
     fill: #076692;
-}
-@media only screen and (max-width:1200px) {
-    .navbar {
-      bottom: 0;
-      width: 100%;
-    }
-    .logo-link img{
-        display: none;
-    }
-    .nav {
-      flex-direction: row;
-      height: 5rem;
-    }
-    .link:hover{
-        background-color: var(--hover-color);
-    }
-    .link {
-      justify-content: center;
-    }
-  
-    main {
-      margin-bottom: 5rem;
-    }
-    .followers{
-        display: none;
-    }
-}
-@media only screen and (min-width:1200px) {
-    .navbar {
-      width: 5rem;
-      height: 100vh;
-    }
-    .navbar:hover .link{
-        margin: 0 auto;
-        justify-content:flex-start;
-        margin-bottom: 1rem;    
-        border-radius: 12px;
-        width: 15rem;
-        padding: 10px 20px 10px 20px;
-    }
-    .navbar:hover .follower-link,#following-text,.show-more{
-        justify-content: flex-start;
-        margin: 0 auto;
-        margin-bottom: 1rem;
-        width: 15rem;
-    }
-    .navbar:hover .show-more{
-        display: initial;
-    }
-
-    .navbar:hover .link:hover{
-        background-color: var(--hover-color);
-    }
-
-    .navbar:hover .logo{
-        justify-content: space-between; 
-    }
-    .navbar:hover #logo{
-        display: initial;
-    }
-    .navbar:hover {
-        width: 20rem;
-    }
-    .navbar:hover .text {
-        display: inline;
-    }
-    .follower-link span:hover{
-       color: gray;
-    }
-    main{
-        margin-left: 20rem;
-    }
-}
-
-@media only screen and (max-width:700px){
-    header{
-        flex-direction: column;
-        align-items: center;
-    }
-    .searchbox{
-        margin-bottom: 50px;
-    }
-    .section-navbar{
-        display: none;
-    }
-    .gopro-link{
-        display: none;
-    }
-    .bell{
-        display: none;
-    }
-    .mail{
-        display: none;
-    }
-    .header-nav{
-        flex-direction: column;
-    }
-    .footer-wrap{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .company{
-        margin-top: 40px;
-    }
-    .brands{
-        margin: 0;
-    }
 }
